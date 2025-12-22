@@ -1,0 +1,16 @@
+# Fichier gitignore 
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Executables
+*.exe
+*.msi
+
+# OS
+Thumbs.db
+.DS_Store
