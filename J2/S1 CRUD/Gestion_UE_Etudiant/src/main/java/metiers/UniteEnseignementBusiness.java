@@ -2,6 +2,8 @@ package metiers;
 
 
 import entities.UniteEnseignement;
+
+import javax.ws.rs.GET;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -77,6 +79,7 @@ public class UniteEnseignementBusiness {
             return false;
         }
     }
+
 
     public List<UniteEnseignement> getListeUE() {
         return unitesEnseignement;
