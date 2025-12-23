@@ -48,5 +48,14 @@ public class UERessources {
                     .build();
         }
     }
+
+    @Path("/{code}")
+    @DELETE
+    public Response deleteUE(@PathParam("code") int code){
+        if(ueb.deleteUniteEnseignement(code))
+            return Response.ok().build();
+        else return Response.status(Response.Status.NO_CONTENT)
+                            .build();
+    }
 }
 
