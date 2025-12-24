@@ -1,6 +1,7 @@
 package apiRest;
 
 import entities.UniteEnseignement;
+import filtres.Secured;
 import metiers.UniteEnseignementBusiness;
 
 import javax.ws.rs.*;
@@ -49,6 +50,7 @@ public class UERessources {
         }
     }
 
+    @Secured
     @Path("/{code}")
     @DELETE
     public Response deleteUE(@PathParam("code") int code){
