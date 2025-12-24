@@ -1,0 +1,31 @@
+type Module{
+    matricule:String
+    nom: String
+    coefficient: Int
+    volumeHoraire: Int
+    typem: TypeModule
+    uniteEnseignement: UniteEnseignement
+
+}
+
+enum TypeModule{
+    TRANSVERSAL,
+    PROFESSIONNEL,
+    RECHERCHE
+}
+
+type  UniteEnseignement{
+    code: Int
+    domaine: Int
+    responsable: String
+    credits: Int
+    semestre: Int
+}
+
+type QueryProjet{
+    getModules:[Module]
+}
+
+schema{
+    query: QueryProjet
+}
